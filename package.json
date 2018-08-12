@@ -2,7 +2,7 @@
   "name": "kirby-robots",
   "description": "robots.txt for Kirby Websites.",
   "author": "Patrick Schumacher <hello@thepoddi.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "kirby-plugin",
   "license": "MIT"
 }
