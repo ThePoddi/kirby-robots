@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  * Plugin Name: Robots
  * Description: robots.txt for Kirby Websites.
- * @version    1.0.0
+ * @version    1.0.1
  * @author     Patrick Schumacher <hello@thepoddi.com>
  * @link       https://github.com/ThePoddi/kirby-robots
  * @license    MIT
@@ -27,10 +27,10 @@ kirby()->routes(
         // disallow crawling for some pages
         foreach( site()->index() as $p ) :
           if (
-            in_array( $p->uid(), $ignorePages ) || // ignore pages defined in config
+            in_array( $p->uri(), $ignorePages ) || // ignore pages defined in config
             in_array( $p->intendedTemplate(), $ignoreTemplates ) || // ignore templates defined in config
             ( $ignoreInvisible === true && $p->isInvisible() ) // ignore invisible pages
-          ) $robots .= 'Disallow: /' . $p->uid() . "\n";
+          ) $robots .= 'Disallow: /' . $p->uri() . "\n";
         endforeach;
 
         // sitemap location
