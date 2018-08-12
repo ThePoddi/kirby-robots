@@ -20,7 +20,7 @@ This plugin sets a robots file to `/robots.txt` as a kirby route. There is no ac
 The robots file can be configured via Kirby’s config file `/site/config/config.php`.
 
 ### Ignore Pages
-Ignore pages by uid. (array) *Default: error*
+Ignore specific pages by URI - example: 'blog/my-article'. (array) *Default: error*
 ```
 c::set( 'robots.ignore.pages', array('error') );
 ```
