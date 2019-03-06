@@ -1,6 +1,9 @@
-# Kirby Plugin: Robots
+# Kirby 2 Plugin: Robots
 
-robots.txt for kirby websites.
+robots.txt for Kirby 2 websites.
+
+> For **Kirby 3** you can use this SEO Kit: [Kirby 3 SEO Kit](https://github.com/ThePoddi/kirby3-seokit) 
+
 
 ## Installation
 
